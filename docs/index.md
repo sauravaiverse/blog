@@ -29,14 +29,32 @@ features:
     title: Agentic AI
     details: Explore autonomous AI agents with PhiData, CrewAI, and AutoGen. Learn to build intelligent systems that can reason and act independently.
     link: /agentic-ai/
+    linkText: Learn More →
   - icon: 🎨
     title: Generative AI
     details: Master Large Language Models, Image Generation, and Audio Synthesis. Create cutting-edge AI applications with practical examples.
     link: /generative-ai/
+    linkText: Explore →
   - icon: 📚
     title: Comprehensive Guides
     details: Step-by-step tutorials, best practices, and real-world examples to help you implement AI solutions effectively.
     link: /agentic-ai/phidata/getting-started
+    linkText: Get Started →
+
+  - title: Interactive Learning
+    items:
+      - icon: 🎯
+        title: AI Playground
+        details: Try out AI models and experiment with different parameters in our interactive playground.
+        link: /playground
+      - icon: 📊
+        title: Performance Benchmarks
+        details: Compare different AI models and frameworks with our comprehensive benchmarks.
+        link: /benchmarks
+      - icon: 🤝
+        title: Community Projects
+        details: Explore and contribute to community-driven AI projects and implementations.
+        link: /projects
 
 main:
   - title: Latest Articles
