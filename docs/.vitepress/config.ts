@@ -5,7 +5,7 @@ export default defineConfig({
   lang: 'en-US',
   title: 'AI Knowledge Hub',
   description: 'Comprehensive guide to Agentic AI and Generative AI technologies',
-  base: '/blog/', // Base URL updated for GitHub Pages deployment
+  base: '/blog', // Base URL updated for GitHub Pages deployment
   ignoreDeadLinks: true, // Ignore dead links during build
   lastUpdated: false, // Disable last updated as it requires git
   appearance: true, // Enable dark/light mode switch

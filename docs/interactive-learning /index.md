@@ -7,32 +7,32 @@ Welcome to the Interactive Learning section! Here you'll find hands-on tools and
 ### 🎮 AI Playground
 Try out different AI models and experiment with various parameters in real-time. Test prompts, compare outputs, and understand how different settings affect results.
 
-[Try the Playground →](/interactive-learning/playground/)
+[Try the Playground →](/blog/interactive-learning/playground)
 
 ### 📊 Performance Benchmarks
 Compare different AI models side-by-side. Analyze performance metrics, test with your own inputs, and understand the trade-offs between different models.
 
-[View Benchmarks →](/interactive-learning/benchmarks/)
+[View Benchmarks →](/blog/interactive-learning/benchmarks)
 
 ### 🤝 Community Projects
 Explore real-world implementations, share your own projects, and learn from the community. Get inspired by what others are building and contribute your own ideas.
 
-[Explore Projects →](/interactive-learning/projects/)
+[Explore Projects →](/blog/interactive-learning/projects)
 
 ## Getting Started
 
 1. **Experiment with Models**
-   - Visit the [AI Playground](/interactive-learning/playground/)
+   - Visit the [AI Playground](/blog/interactive-learning/playground)
    - Try different models and parameters
    - See real-time results
 
 2. **Compare Performance**
-   - Check out [Performance Benchmarks](/interactive-learning/benchmarks/)
+   - Check out [Performance Benchmarks](/blog/interactive-learning/benchmarks)
    - Compare model capabilities
    - Understand trade-offs
 
 3. **Join the Community**
-   - Explore [Community Projects](/interactive-learning/projects/)
+   - Explore [Community Projects](/blog/interactive-learning/projects)
    - Share your implementations
    - Learn from others
 
