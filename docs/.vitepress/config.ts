@@ -80,9 +80,10 @@ export default defineConfig({
         ]
       },
       {
-        text: 'LLM Companies',
+        text: 'LLM',
         items: [
-          { text: 'Overview', link: '/llm-companies/' }
+          { text: 'Overview', link: '/llm/' },
+          { text: 'LLM Leaderboards', link: '/llm/leaderboards/' }
         ]
       }
     ],
@@ -169,11 +170,12 @@ export default defineConfig({
           ]
         }
       ],
-      '/llm-companies/': [
+      '/llm/': [
         {
-          text: 'LLM Companies',
+          text: 'LLM',
           items: [
-            { text: 'Overview', link: '/llm-companies/' }
+            { text: 'Overview', link: '/llm/' },
+            { text: 'LLM Leaderboards', link: '/llm/leaderboards/' }
           ]
         }
       ]
