@@ -60,12 +60,7 @@ export default defineConfig({
         text: 'Agentic AI',
         items: [
           { text: 'Overview', link: '/agentic-ai/' },
-          { text: 'PhiData', items: [
-            { text: 'Overview', link: '/agentic-ai/phidata/' },
-            { text: 'Getting Started', link: '/agentic-ai/phidata/getting-started' },
-            { text: 'Core Concepts', link: '/agentic-ai/phidata/core-concepts' },
-            { text: 'Examples', link: '/agentic-ai/phidata/examples' }
-          ] },
+          { text: 'PhiData', link: '/agentic-ai/phidata/' },
           { text: 'CrewAI', link: '/agentic-ai/crewai/' },
           { text: 'AutoGen', link: '/agentic-ai/autogen/' }
         ]
@@ -100,6 +95,7 @@ export default defineConfig({
             {
               text: 'PhiData',
               collapsed: true,
+              link: '/agentic-ai/phidata/',
               items: [
                 { text: 'Getting Started', link: '/agentic-ai/phidata/getting-started' },
                 { text: 'Core Concepts', link: '/agentic-ai/phidata/core-concepts' },
