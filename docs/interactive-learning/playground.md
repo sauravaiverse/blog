@@ -1,6 +1,6 @@
 # AI Playground
 
-Welcome to the AI Playground! This interactive environment allows you to experiment with various AI models and see results in real-time.
+Welcome to the AI Playground! This interactive environment allows you to experiment with various AI models and see results in real-time. Try out different models, adjust parameters, and see how they affect the output.
 
 ::: warning Note
 The interactive playground requires JavaScript to be enabled in your browser.
@@ -111,37 +111,42 @@ print(response)
 <script setup>
 import { onMounted } from 'vue'
 
-onMounted(() => {
-  // Only run in client
-  if (typeof window !== 'undefined') {
-    const modelSelect = document.getElementById('model-select')
-    const promptInput = document.getElementById('prompt-input')
-    const runButton = document.getElementById('run-button')
-    
-    if (runButton) {
-      runButton.addEventListener('click', async () => {
-        const responseText = document.getElementById('response-text')
-        const responseTime = document.getElementById('response-time')
-        const tokenCount = document.getElementById('token-count')
-        const costEstimate = document.getElementById('cost-estimate')
-        
-        // Demo response
-        responseText.textContent = 'This is a demo response. In a real implementation, this would connect to an AI model API.'
-        responseTime.textContent = '150ms'
-        tokenCount.textContent = '25'
-        costEstimate.textContent = '$0.001'
-      })
-    }
-
-    // Update parameter values
-    document.querySelectorAll('.slider-control input').forEach(slider => {
-      slider.addEventListener('input', (e) => {
-        const valueDisplay = e.target.nextElementSibling
-        if (valueDisplay) {
-          valueDisplay.textContent = e.target.value
-        }
-      })
+const initPlayground = () => {
+  const modelSelect = document.getElementById('model-select')
+  const promptInput = document.getElementById('prompt-input')
+  const runButton = document.getElementById('run-button')
+  const responseText = document.getElementById('response-text')
+  const responseTime = document.getElementById('response-time')
+  const tokenCount = document.getElementById('token-count')
+  const costEstimate = document.getElementById('cost-estimate')
+  
+  if (!runButton || !responseText || !responseTime || !tokenCount || !costEstimate) {
+    return
+  }
+  
+  runButton.addEventListener('click', async () => {
+    // Demo response
+    responseText.textContent = 'This is a demo response. In a real implementation, this would connect to an AI model API.'
+    responseTime.textContent = '150ms'
+    tokenCount.textContent = '25'
+    costEstimate.textContent = '$0.001'
+  })
+  
+  // Update parameter values
+  document.querySelectorAll('.slider-control input').forEach(slider => {
+    slider.addEventListener('input', (e) => {
+      const valueDisplay = e.target.nextElementSibling
+      if (valueDisplay) {
+        valueDisplay.textContent = e.target.value
+      }
     })
+  })
+}
+
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    // Use setTimeout to ensure DOM is fully loaded
+    setTimeout(initPlayground, 0)
   }
 })
 </script>
@@ -164,7 +169,7 @@ onMounted(() => {
   background: var(--vp-c-bg);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--vp-c-divider);
 }
 
 .slider-control {
@@ -200,6 +205,14 @@ onMounted(() => {
 
 .run-button:hover {
   background: var(--vp-c-brand-dark);
+}
+
+#response-text {
+  min-height: 100px;
+  padding: 10px;
+  background: var(--vp-c-bg-soft);
+  border-radius: 4px;
+  white-space: pre-wrap;
 }
 
 .metrics {
