@@ -179,7 +179,7 @@ export default defineConfig({
     // Footer configuration
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present AI Knowledge Hub',
+      copyright: 'Copyright © 2025-present AI Knowledge Hub',
       links: [
         { text: 'Blog', link: '/blog/' },
         { text: 'Changelog', link: '/changelog' },
