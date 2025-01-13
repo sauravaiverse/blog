@@ -57,15 +57,6 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       {
-        text: 'Interactive Learning',
-        items: [
-          { text: 'Overview', link: '/interactive-learning/' },
-          { text: 'AI Playground', link: '/interactive-learning/playground' },
-          { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
-          { text: 'Community Projects', link: '/interactive-learning/projects' }
-        ]
-      },
-      {
         text: 'Agentic AI',
         items: [
           { text: 'Overview', link: '/agentic-ai/' },
@@ -82,22 +73,20 @@ export default defineConfig({
           { text: 'Image Generation', link: '/generative-ai/image-generation/' },
           { text: 'Audio Generation', link: '/generative-ai/audio-generation/' }
         ]
-      }
+      },
+      {
+        text: 'Interactive Learning',
+        items: [
+          { text: 'Overview', link: '/interactive-learning/' },
+          { text: 'AI Playground', link: '/interactive-learning/playground' },
+          { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
+          { text: 'Community Projects', link: '/interactive-learning/projects' }
+        ]
+      },
     ],
 
     // Sidebar configuration
     sidebar: {
-      '/interactive-learning/': [
-        {
-          text: 'Interactive Learning',
-          items: [
-            { text: 'Overview', link: '/interactive-learning/' },
-            { text: 'AI Playground', link: '/interactive-learning/playground' },
-            { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
-            { text: 'Community Projects', link: '/interactive-learning/projects' }
-          ]
-        }
-      ],
       '/agentic-ai/': [
         {
           text: 'Agentic AI',
@@ -166,6 +155,17 @@ export default defineConfig({
                 { text: 'Music Generation', link: '/generative-ai/audio-generation/music-generation' }
               ]
             }
+          ]
+        }
+      ],
+      '/interactive-learning/': [
+        {
+          text: 'Interactive Learning',
+          items: [
+            { text: 'Overview', link: '/interactive-learning/' },
+            { text: 'AI Playground', link: '/interactive-learning/playground' },
+            { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
+            { text: 'Community Projects', link: '/interactive-learning/projects' }
           ]
         }
       ]
