@@ -40,7 +40,6 @@ features:
     details: Step-by-step tutorials, best practices, and real-world examples to help you implement AI solutions effectively.
     link: /agentic-ai/phidata/getting-started
     linkText: Get Started →
-
   - icon: 🎯
     title: AI Playground
     details: Try out AI models and experiment with different parameters in our interactive playground.
