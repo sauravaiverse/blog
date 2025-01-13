@@ -60,9 +60,9 @@ export default defineConfig({
         text: 'Interactive Learning',
         items: [
           { text: 'Overview', link: '/interactive-learning/' },
-          { text: 'AI Playground', link: '/interactive-learning/playground/' },
-          { text: 'Benchmarks', link: '/interactive-learning/benchmarks/' },
-          { text: 'Community Projects', link: '/interactive-learning/projects/' }
+          { text: 'AI Playground', link: '/interactive-learning/playground' },
+          { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
+          { text: 'Community Projects', link: '/interactive-learning/projects' }
         ]
       },
       {
@@ -92,9 +92,9 @@ export default defineConfig({
           text: 'Interactive Learning',
           items: [
             { text: 'Overview', link: '/interactive-learning/' },
-            { text: 'AI Playground', link: '/interactive-learning/playground/' },
-            { text: 'Benchmarks', link: '/interactive-learning/benchmarks/' },
-            { text: 'Community Projects', link: '/interactive-learning/projects/' }
+            { text: 'AI Playground', link: '/interactive-learning/playground' },
+            { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
+            { text: 'Community Projects', link: '/interactive-learning/projects' }
           ]
         }
       ],
@@ -179,7 +179,7 @@ export default defineConfig({
     // Footer configuration
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025-present AI Knowledge Hub',
+      copyright: 'Copyright © 2024-present AI Knowledge Hub',
       links: [
         { text: 'Blog', link: '/blog/' },
         { text: 'Changelog', link: '/changelog' },

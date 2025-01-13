@@ -44,17 +44,17 @@ features:
   - icon: 🎯
     title: AI Playground
     details: Try out AI models and experiment with different parameters in our interactive playground.
-    link: /interactive-learning/playground
+    link: /interactive-learning/playground/
     linkText: Try Now →
   - icon: 📊
     title: Performance Benchmarks
     details: Compare different AI models and frameworks with our comprehensive benchmarks.
-    link: /interactive-learning/benchmarks
+    link: /interactive-learning/benchmarks/
     linkText: View Benchmarks →
   - icon: 🤝
     title: Community Projects
     details: Explore and contribute to community-driven AI projects and implementations.
-    link: /interactive-learning/projects
+    link: /interactive-learning/projects/
     linkText: Join Projects →
 
 main:
