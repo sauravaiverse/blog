@@ -41,20 +41,21 @@ features:
     link: /agentic-ai/phidata/getting-started
     linkText: Get Started →
 
-  - title: Interactive Learning
-    items:
-      - icon: 🎯
-        title: AI Playground
-        details: Try out AI models and experiment with different parameters in our interactive playground.
-        link: /playground
-      - icon: 📊
-        title: Performance Benchmarks
-        details: Compare different AI models and frameworks with our comprehensive benchmarks.
-        link: /benchmarks
-      - icon: 🤝
-        title: Community Projects
-        details: Explore and contribute to community-driven AI projects and implementations.
-        link: /projects
+  - icon: 🎯
+    title: AI Playground
+    details: Try out AI models and experiment with different parameters in our interactive playground.
+    link: /interactive-learning/playground
+    linkText: Try Now →
+  - icon: 📊
+    title: Performance Benchmarks
+    details: Compare different AI models and frameworks with our comprehensive benchmarks.
+    link: /interactive-learning/benchmarks
+    linkText: View Benchmarks →
+  - icon: 🤝
+    title: Community Projects
+    details: Explore and contribute to community-driven AI projects and implementations.
+    link: /interactive-learning/projects
+    linkText: Join Projects →
 
 main:
   - title: Latest Articles
