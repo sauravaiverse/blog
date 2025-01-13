@@ -87,22 +87,89 @@ footer:
 ---
 
 <style>
+/* Enhanced color variables */
 :root {
+  /* Primary colors */
+  --vp-c-brand: #3eaf7c;
+  --vp-c-brand-light: #4abf8a;
+  --vp-c-brand-lighter: #5ccf9a;
+  --vp-c-brand-dark: #369f6b;
+  --vp-c-brand-darker: #2e8f5f;
+
+  /* Custom gradients */
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
-  --vp-home-hero-image-filter: blur(44px);
+  --vp-home-hero-name-background: linear-gradient(120deg, var(--vp-c-brand) 30%, #41d1ff);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--vp-c-brand) 50%, #47caff 50%);
+  --vp-home-hero-image-filter: blur(40px);
+
+  /* Typography */
+  --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --vp-font-family-mono: 'Fira Code', Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  /* Custom properties */
+  --content-width: 900px;
+  --sidebar-width: 272px;
 }
 
+/* Dark mode customization */
+.dark {
+  --vp-c-bg: #1a1a1a;
+  --vp-c-bg-soft: #242424;
+  --vp-c-bg-mute: #2f2f2f;
+}
+
+/* Responsive design */
 @media (min-width: 640px) {
   :root {
-    --vp-home-hero-image-filter: blur(56px);
+    --vp-home-hero-image-filter: blur(50px);
   }
 }
 
 @media (min-width: 960px) {
   :root {
-    --vp-home-hero-image-filter: blur(68px);
+    --vp-home-hero-image-filter: blur(60px);
   }
+}
+
+/* Enhanced typography */
+.vp-doc h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h2 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin: 48px 0 16px;
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 24px;
+}
+
+/* Enhanced link styles */
+.vp-doc a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand);
+}
+
+/* Enhanced code blocks */
+.vp-doc pre {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* Enhanced button styles */
+.vp-button {
+  transition: all 0.2s ease;
+  border-radius: 8px;
+}
+
+.vp-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 </style>

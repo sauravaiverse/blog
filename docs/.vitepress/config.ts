@@ -8,6 +8,9 @@ export default defineConfig({
   base: '/blog/', // Base URL updated for GitHub Pages deployment
   ignoreDeadLinks: true, // Ignore dead links during build
   lastUpdated: false, // Disable last updated as it requires git
+  appearance: true, // Enable dark/light mode switch
+  
+  // Enhanced head metadata for better SEO and accessibility
   
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -15,14 +18,35 @@ export default defineConfig({
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['meta', { name: 'msapplication-TileColor', content: '#3eaf7c' }],
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=5.0' }],
+    ['meta', { name: 'description', content: 'Comprehensive guide to Agentic AI and Generative AI technologies' }],
+    ['meta', { name: 'theme-color', media: '(prefers-color-scheme: light)', content: '#ffffff' }],
+    ['meta', { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#1a1a1a' }]
   ],
 
   cleanUrls: true, // Enable clean URLs
   
+  // Enhanced theme customization
   themeConfig: {
-    // Logo in nav bar
-    logo: '/logo.png',
+    // Logo configuration with dark mode support
+    logo: {
+      light: '/logo-light.png',
+      dark: '/logo-dark.png'
+    },
+  
+    // Enhanced search configuration
+    search: {
+      provider: 'local',
+      options: {
+        detailedView: true,
+        miniSearch: {
+          searchOptions: {
+            fuzzy: 0.2,
+            prefix: true
+          }
+        }
+      }
+    },
     
     // Navigation bar configuration
     nav: [
@@ -127,18 +151,36 @@ export default defineConfig({
     // Footer configuration
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present AI Knowledge Hub'
+      copyright: 'Copyright © 2024-present AI Knowledge Hub',
+      links: [
+        { text: 'Privacy Policy', link: '/privacy-policy' },
+        { text: 'Terms of Service', link: '/terms-of-service' },
+        { text: 'Accessibility', link: '/accessibility' }
+      ]
     },
 
-    // Search configuration
-    search: {
-      provider: 'local'
+    // Enhanced sidebar configuration
+    sidebar: {
+      // Existing sidebar configuration...
     },
 
-    outline: 'deep', // Show deep outline in docs
+    // Enhanced documentation features
+    outline: {
+      level: [2, 3],
+      label: 'On this page'
+    },
+
     docFooter: {
       prev: 'Previous Page',
       next: 'Next Page'
-    }
+    },
+
+    // New features for better UX
+    returnToTopLabel: 'Return to top',
+    sidebarMenuLabel: 'Menu',
+    darkModeSwitchLabel: 'Theme',
+    
+    // Progress bar for better feedback
+    nprogress: true
   }
 })
