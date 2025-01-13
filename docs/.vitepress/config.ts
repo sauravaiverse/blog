@@ -82,7 +82,7 @@ export default defineConfig({
           { text: 'Image Generation', link: '/generative-ai/image-generation/' },
           { text: 'Audio Generation', link: '/generative-ai/audio-generation/' }
         ]
-      },
+      }
     ],
 
     // Sidebar configuration
