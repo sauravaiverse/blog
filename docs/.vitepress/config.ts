@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig } from 'vitepress'
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
@@ -6,8 +6,25 @@ export default defineConfig({
   title: 'AI Knowledge Hub',
   description: 'Comprehensive guide to Agentic AI and Generative AI technologies',
   base: '/blog/', // Base URL updated for GitHub Pages deployment
+  ignoreDeadLinks: true, // Ignore dead links during build
+  lastUpdated: false, // Disable last updated as it requires git
+  
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#3eaf7c' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+  ],
 
+  cleanUrls: true, // Enable clean URLs
+  
   themeConfig: {
+    // Logo in nav bar
+    logo: '/logo.png',
+    
+    // Navigation bar configuration
     nav: [
       { text: 'Home', link: '/' },
       {
@@ -30,6 +47,7 @@ export default defineConfig({
       }
     ],
 
+    // Sidebar configuration
     sidebar: [
       {
         text: 'Agentic AI',
@@ -98,11 +116,29 @@ export default defineConfig({
             ]
           }
         ]
-      },
+      }
     ],
 
+    // Social links
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sauravaiverse/blog' }
-    ]
-  },
-});
+    ],
+
+    // Footer configuration
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2024-present AI Knowledge Hub'
+    },
+
+    // Search configuration
+    search: {
+      provider: 'local'
+    },
+
+    outline: 'deep', // Show deep outline in docs
+    docFooter: {
+      prev: 'Previous Page',
+      next: 'Next Page'
+    }
+  }
+})
