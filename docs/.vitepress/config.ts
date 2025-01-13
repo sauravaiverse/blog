@@ -60,9 +60,9 @@ export default defineConfig({
         text: 'Interactive Learning',
         items: [
           { text: 'Overview', link: '/interactive-learning/' },
-          { text: 'AI Playground', link: '/interactive-learning/playground' },
-          { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
-          { text: 'Community Projects', link: '/interactive-learning/projects' }
+          { text: 'AI Playground', link: '/interactive-learning/playground/' },
+          { text: 'Benchmarks', link: '/interactive-learning/benchmarks/' },
+          { text: 'Community Projects', link: '/interactive-learning/projects/' }
         ]
       },
       {
@@ -92,20 +92,9 @@ export default defineConfig({
           text: 'Interactive Learning',
           items: [
             { text: 'Overview', link: '/interactive-learning/' },
-            { text: 'AI Playground', link: '/interactive-learning/playground' },
-            { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
-            { text: 'Community Projects', link: '/interactive-learning/projects' }
-          ]
-        }
-      ],
-      '/interactive-learning/': [
-        {
-          text: 'Interactive Learning',
-          items: [
-            { text: 'Overview', link: '/interactive-learning/' },
-            { text: 'AI Playground', link: '/interactive-learning/playground' },
-            { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
-            { text: 'Community Projects', link: '/interactive-learning/projects' }
+            { text: 'AI Playground', link: '/interactive-learning/playground/' },
+            { text: 'Benchmarks', link: '/interactive-learning/benchmarks/' },
+            { text: 'Community Projects', link: '/interactive-learning/projects/' }
           ]
         }
       ],
