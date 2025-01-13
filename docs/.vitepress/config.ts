@@ -5,7 +5,7 @@ export default defineConfig({
   lang: 'en-US',
   title: 'VitePress',
   description: 'Vite & Vue powered static site generator.',
-  base: '/', // Change this to '/<repo-name>/' when deploying to GitHub Pages
+  base: '/blog/', // Base URL updated for GitHub Pages deployment
 
   themeConfig: {
     nav: [
