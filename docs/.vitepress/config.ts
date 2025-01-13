@@ -5,12 +5,11 @@ export default defineConfig({
   lang: 'en-US',
   title: 'AI Knowledge Hub',
   description: 'Comprehensive guide to Agentic AI and Generative AI technologies',
-  base: '/blog', // Base URL updated for GitHub Pages deployment
-  ignoreDeadLinks: true, // Ignore dead links during build
-  lastUpdated: false, // Disable last updated as it requires git
-  appearance: true, // Enable dark/light mode switch
+  base: '/blog/', // Base URL must end with trailing slash
+  ignoreDeadLinks: true,
+  lastUpdated: false,
+  appearance: true,
   
-  // Enhanced head metadata for better SEO and accessibility
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -26,19 +25,17 @@ export default defineConfig({
     ['meta', { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#1a1a1a' }]
   ],
 
-  cleanUrls: true, // Enable clean URLs
+  cleanUrls: true,
   
   themeConfig: {
     logo: '/logo.png',
   
-    // Add language selector
     locales: {
       root: { label: 'English' },
       zh: { label: '简体中文' },
       es: { label: 'Español' }
     },
   
-    // Enhanced search configuration
     search: {
       provider: 'local',
       options: {
@@ -53,9 +50,17 @@ export default defineConfig({
       }
     },
     
-    // Navigation bar configuration
     nav: [
       { text: 'Home', link: '/' },
+      {
+        text: 'Interactive Learning',
+        items: [
+          { text: 'Overview', link: '/interactive-learning/' },
+          { text: 'AI Playground', link: '/interactive-learning/playground' },
+          { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
+          { text: 'Community Projects', link: '/interactive-learning/projects' }
+        ]
+      },
       {
         text: 'Agentic AI',
         items: [
@@ -75,18 +80,25 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Interactive Learning',
+        text: 'LLM Companies',
         items: [
-          { text: 'Overview', link: '/interactive-learning/' },
-          { text: 'AI Playground', link: '/interactive-learning/playground' },
-          { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
-          { text: 'Community Projects', link: '/interactive-learning/projects' }
+          { text: 'Overview', link: '/llm-companies/' }
         ]
-      },
+      }
     ],
 
-    // Sidebar configuration
     sidebar: {
+      '/interactive-learning/': [
+        {
+          text: 'Interactive Learning',
+          items: [
+            { text: 'Overview', link: '/interactive-learning/' },
+            { text: 'AI Playground', link: '/interactive-learning/playground' },
+            { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
+            { text: 'Community Projects', link: '/interactive-learning/projects' }
+          ]
+        }
+      ],
       '/agentic-ai/': [
         {
           text: 'Agentic AI',
@@ -95,7 +107,6 @@ export default defineConfig({
             {
               text: 'PhiData',
               collapsed: true,
-              link: '/agentic-ai/phidata/',
               items: [
                 { text: 'Getting Started', link: '/agentic-ai/phidata/getting-started' },
                 { text: 'Core Concepts', link: '/agentic-ai/phidata/core-concepts' },
@@ -158,25 +169,20 @@ export default defineConfig({
           ]
         }
       ],
-      '/interactive-learning/': [
+      '/llm-companies/': [
         {
-          text: 'Interactive Learning',
+          text: 'LLM Companies',
           items: [
-            { text: 'Overview', link: '/interactive-learning/' },
-            { text: 'AI Playground', link: '/interactive-learning/playground' },
-            { text: 'Benchmarks', link: '/interactive-learning/benchmarks' },
-            { text: 'Community Projects', link: '/interactive-learning/projects' }
+            { text: 'Overview', link: '/llm-companies/' }
           ]
         }
       ]
     },
 
-    // Social links
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sauravaiverse/blog' }
     ],
 
-    // Footer configuration
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present AI Knowledge Hub',
@@ -187,7 +193,6 @@ export default defineConfig({
       ]
     },
 
-    // Enhanced documentation features
     outline: {
       level: [2, 3],
       label: 'On this page'
@@ -198,27 +203,22 @@ export default defineConfig({
       next: 'Next Page'
     },
 
-    // New features for better UX
     returnToTopLabel: 'Return to top',
     sidebarMenuLabel: 'Menu',
     darkModeSwitchLabel: 'Theme',
     
-    // Progress bar for better feedback
     nprogress: true,
 
-    // Add additional features
     carbonAds: {
       code: 'your-carbon-code',
       placement: 'your-carbon-placement'
     },
     
-    // Add edit link
     editLink: {
       pattern: 'https://github.com/sauravaiverse/blog/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
     
-    // Add last updated timestamp
     lastUpdated: true
   }
 })
