@@ -11,23 +11,11 @@ head:
   - - meta
     - name: author
       content: AI Knowledge Hub
-  - - script
-    - type: application/ld+json
-      content: {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "AI Knowledge Hub",
-        "description": "Comprehensive guide to Agentic AI and Generative AI technologies",
-        "url": "https://sauravaiverse.github.io/blog/"
-      }
 
 hero:
   name: "AI Knowledge Hub"
   text: "Master the Future of AI Technology"
   tagline: Comprehensive guides on Agentic & Generative AI - from foundational concepts to advanced implementations.
-  image:
-    src: /hero-image.png
-    alt: AI Knowledge Hub illustration
   actions:
     - theme: brand
       text: Get Started
@@ -50,31 +38,18 @@ features:
     details: Step-by-step tutorials, best practices, and real-world examples to help you implement AI solutions effectively.
     link: /agentic-ai/phidata/getting-started
 
-aside: true
-outline: deep
-
 main:
   - title: Latest Articles
     items:
       - title: "Getting Started with PhiData"
         description: "Learn how to build your first autonomous AI agent with PhiData"
         link: /agentic-ai/phidata/getting-started
-        date: "2024-01-20"
       - title: "Understanding GPT Models"
         description: "Deep dive into the architecture and capabilities of GPT models"
         link: /generative-ai/llms/gpt
-        date: "2024-01-18"
       - title: "CrewAI Tutorial"
         description: "Build collaborative AI systems with CrewAI framework"
         link: /agentic-ai/crewai/getting-started
-        date: "2024-01-15"
-
-  - title: Newsletter
-    type: subscribe
-    description: Stay updated with the latest in AI technology
-    form:
-      placeholder: Enter your email
-      button: Subscribe
 
   - title: Why Choose Our Guide
     type: grid
