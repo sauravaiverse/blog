@@ -83,8 +83,7 @@ export default defineConfig({
         items: [
           { text: 'Overview', link: '/llm/' },
           { text: 'LLM Leaderboards', link: '/llm/leaderboards/' },
-          { text: 'Getting Started', link: '/llm/00_getting_started_generative_ai/' },
-          { text: 'GenAI Foundations', link: '/llm/02_genai_foundations/' }
+          { text: 'GenAI Foundations', link: '/llm/genai-foundations/' }
         ]
       }
     ],
@@ -176,7 +175,29 @@ export default defineConfig({
           text: 'LLM',
           items: [
             { text: 'Overview', link: '/llm/' },
-            { text: 'LLM Leaderboards', link: '/llm/leaderboards/' }
+            { text: 'LLM Leaderboards', link: '/llm/leaderboards/' },
+            { text: 'GenAI Foundations', link: '/llm/genai-foundations/' },
+            {
+              text: 'Neural Network',
+              collapsed: true,
+              items: [
+                { text: 'Neural Network', link: '/llm/neural-network' },
+              ]
+            },
+            {
+              text: 'Descriminative AI',
+              collapsed: true,
+              items: [
+                { text: 'Neural Network', link: '/llm/descriminative-ai' },
+              ]
+            },
+            {
+              text: 'Generative AI',
+              collapsed: true,
+              items: [
+                { text: 'Generative AI', link: '/llm/generative-ai' },
+              ]
+            },
           ]
         }
       ]
