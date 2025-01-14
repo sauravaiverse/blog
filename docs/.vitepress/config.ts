@@ -82,22 +82,9 @@ export default defineConfig({
           { text: 'Overview', link: '/llm/' },
           { text: 'LLM Leaderboards', link: '/llm/leaderboards/' },
           { text: 'GenAI Foundations', link: '/llm/genai-foundations/' },
-          {
-            text: 'Neural Network',
-            link: '/llm/genai-foundations/neural-network/'
-          },
-          {
-            text: 'Discriminative AI',
-            link: '/llm/genai-foundations/discriminative-ai/'
-          },
-          {
-            text: 'Generative AI',
-            items: [
-              { text: 'Transformers', link: '/llm/genai-foundations/generative-ai/transformers/' },
-              { text: 'GANs', link: '/llm/genai-foundations/generative-ai/gans/' },
-              { text: 'Diffusers', link: '/llm/genai-foundations/generative-ai/diffusers/' }
-            ]
-          }
+          { text: 'Neural Network', link: '/llm/genai-foundations/neural-network/' },
+          { text: 'Discriminative AI', link: '/llm/genai-foundations/discriminative-ai/' },
+          { text: 'Generative AI', link: '/llm/genai-foundations/generative-ai/' }
         ]
       }
     ],
@@ -249,7 +236,7 @@ export default defineConfig({
     },
 
     lastUpdated: {
-      text: 'Last updated', 
+      text: 'Last updated',
       formatOptions: {
         year: 'numeric',
         month: 'long',
