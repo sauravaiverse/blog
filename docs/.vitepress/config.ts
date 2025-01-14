@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/blog/',
   ignoreDeadLinks: true,
   appearance: true,
-
+  
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -24,16 +24,16 @@ export default defineConfig({
   ],
 
   cleanUrls: true,
-
+  
   themeConfig: {
     logo: '/logo.png',
-
+  
     locales: {
       root: { label: 'English' },
       zh: { label: '简体中文' },
       es: { label: 'Español' }
     },
-
+  
     search: {
       provider: 'local',
       options: {
@@ -46,7 +46,7 @@ export default defineConfig({
         }
       }
     },
-
+    
     nav: [
       { text: 'Home', link: '/' },
       {
@@ -73,10 +73,7 @@ export default defineConfig({
           { text: 'Overview', link: '/generative-ai/' },
           { text: 'Large Language Models', link: '/generative-ai/llms/' },
           { text: 'Image Generation', link: '/generative-ai/image-generation/' },
-          { text: 'Audio Generation', link: '/generative-ai/audio-generation/' },
-          { text: 'Transformers', link: '/generative-ai/transformers/' },
-          { text: 'GANs', link: '/generative-ai/gans/' },
-          { text: 'Diffusers', link: '/generative-ai/diffusers/' }
+          { text: 'Audio Generation', link: '/generative-ai/audio-generation/' }
         ]
       },
       {
@@ -167,33 +164,6 @@ export default defineConfig({
                 { text: 'Text to Speech', link: '/generative-ai/audio-generation/text-to-speech' },
                 { text: 'Music Generation', link: '/generative-ai/audio-generation/music-generation' }
               ]
-            },
-            {
-              text: 'Transformers',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/generative-ai/transformers/' },
-                { text: 'Use Cases', link: '/generative-ai/transformers/use-cases' },
-                { text: 'Technical Details', link: '/generative-ai/transformers/technical-details' }
-              ]
-            },
-            {
-              text: 'GANs',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/generative-ai/gans/' },
-                { text: 'Applications', link: '/generative-ai/gans/applications' },
-                { text: 'Technical Details', link: '/generative-ai/gans/technical-details' }
-              ]
-            },
-            {
-              text: 'Diffusers',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/generative-ai/diffusers/' },
-                { text: 'Applications', link: '/generative-ai/diffusers/applications' },
-                { text: 'Technical Details', link: '/generative-ai/diffusers/technical-details' }
-              ]
             }
           ]
         }
@@ -225,6 +195,30 @@ export default defineConfig({
               items: [
                 { text: 'Overview', link: '/llm/generative-ai/' }
               ]
+            },
+            {
+              text: 'Transformers',
+              collapsed: true,
+              items: [
+                { text: 'Introduction', link: '/llm/transformers/' },
+                { text: 'Applications', link: '/llm/transformers/applications' }
+              ]
+            },
+            {
+              text: 'GANs',
+              collapsed: true,
+              items: [
+                { text: 'Overview', link: '/llm/gans/' },
+                { text: 'Applications', link: '/llm/gans/applications' }
+              ]
+            },
+            {
+              text: 'Diffusers',
+              collapsed: true,
+              items: [
+                { text: 'Overview', link: '/llm/diffusers/' },
+                { text: 'Applications', link: '/llm/diffusers/applications' }
+              ]
             }
           ]
         }
@@ -253,19 +247,19 @@ export default defineConfig({
     returnToTopLabel: 'Return to top',
     sidebarMenuLabel: 'Menu',
     darkModeSwitchLabel: 'Theme',
-
+    
     nprogress: true,
 
     carbonAds: {
       code: 'your-carbon-code',
       placement: 'your-carbon-placement'
     },
-
+    
     editLink: {
       pattern: 'https://github.com/sauravaiverse/blog/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
-
+    
     lastUpdated: {
       text: 'Last updated', 
       format: (date) => {
