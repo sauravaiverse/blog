@@ -81,10 +81,7 @@ export default defineConfig({
         items: [
           { text: 'Overview', link: '/llm/' },
           { text: 'LLM Leaderboards', link: '/llm/leaderboards/' },
-          { text: 'GenAI Foundations', link: '/llm/genai-foundations/' },
-          { text: 'Neural Network', link: '/llm/genai-foundations/neural-network/' },
-          { text: 'Discriminative AI', link: '/llm/genai-foundations/discriminative-ai/' },
-          { text: 'Generative AI', link: '/llm/genai-foundations/generative-ai/' }
+          { text: 'GenAI Foundations', link: '/llm/genai-foundations/' }
         ]
       }
     ],
