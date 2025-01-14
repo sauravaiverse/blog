@@ -190,13 +190,16 @@ export default defineConfig({
           items: [
             { text: 'Overview', link: '/llm/' },
             { text: 'LLM Leaderboards', link: '/llm/leaderboards/' },
-            { text: 'GenAI Foundations',
+            {
+              text: 'GenAI Foundations',
+              collapsed: true,
               items: [
                 { text: 'Overview', link: '/llm/genai-foundations/' },
                 { text: 'Neural Network', link: '/llm/genai-foundations/neural-network/' },
                 { text: 'Discriminative AI', link: '/llm/genai-foundations/discriminative-ai/' },
                 {
                   text: 'Generative AI',
+                  collapsed: true,
                   items: [
                     { text: 'Transformers', link: '/llm/genai-foundations/generative-ai/transformers/' },
                     { text: 'GANs', link: '/llm/genai-foundations/generative-ai/gans/' },
