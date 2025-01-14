@@ -1,13 +1,11 @@
 import { defineConfig } from 'vitepress'
 
-// refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
   lang: 'en-US',
   title: 'AI Knowledge Hub',
   description: 'Comprehensive guide to Agentic AI and Generative AI technologies',
-  base: '/blog/', // Base URL must end with trailing slash
+  base: '/blog/',
   ignoreDeadLinks: true,
-  lastUpdated: false,
   appearance: true,
   
   head: [
@@ -238,11 +236,12 @@ export default defineConfig({
       text: 'Edit this page on GitHub'
     },
     
-    editLink: {
-      pattern: 'https://github.com/sauravaiverse/blog/edit/main/docs/:path',
-      text: 'Edit this page on GitHub'
-    },
-    
-    lastUpdated: true
+    lastUpdated: {
+      text: 'Last updated', // Customize the text if needed
+      format: (date: Date) => {
+        // Customize the date format if needed
+        return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      }
+    }
   }
 })
