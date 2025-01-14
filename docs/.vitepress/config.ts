@@ -217,6 +217,11 @@ export default defineConfig({
       text: 'Edit this page on GitHub'
     },
     
-    lastUpdated: { format: 'short' }
+    editLink: {
+      pattern: 'https://github.com/sauravaiverse/blog/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
+    
+    lastUpdated: true
   }
 })
