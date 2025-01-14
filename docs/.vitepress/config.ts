@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/blog/',
   ignoreDeadLinks: true,
   appearance: true,
-  
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -24,16 +24,16 @@ export default defineConfig({
   ],
 
   cleanUrls: true,
-  
+
   themeConfig: {
     logo: '/logo.png',
-  
+
     locales: {
       root: { label: 'English' },
       zh: { label: '简体中文' },
       es: { label: 'Español' }
     },
-  
+
     search: {
       provider: 'local',
       options: {
@@ -46,7 +46,7 @@ export default defineConfig({
         }
       }
     },
-    
+
     nav: [
       { text: 'Home', link: '/' },
       {
@@ -81,7 +81,23 @@ export default defineConfig({
         items: [
           { text: 'Overview', link: '/llm/' },
           { text: 'LLM Leaderboards', link: '/llm/leaderboards/' },
-          { text: 'GenAI Foundations', link: '/llm/genai-foundations/' }
+          { text: 'GenAI Foundations', link: '/llm/genai-foundations/' },
+          {
+            text: 'Neural Network',
+            link: '/llm/genai-foundations/neural-network/'
+          },
+          {
+            text: 'Discriminative AI',
+            link: '/llm/genai-foundations/discriminative-ai/'
+          },
+          {
+            text: 'Generative AI',
+            items: [
+              { text: 'Transformers', link: '/llm/genai-foundations/generative-ai/transformers/' },
+              { text: 'GANs', link: '/llm/genai-foundations/generative-ai/gans/' },
+              { text: 'Diffusers', link: '/llm/genai-foundations/generative-ai/diffusers/' }
+            ]
+          }
         ]
       }
     ],
@@ -174,50 +190,19 @@ export default defineConfig({
           items: [
             { text: 'Overview', link: '/llm/' },
             { text: 'LLM Leaderboards', link: '/llm/leaderboards/' },
-            { text: 'GenAI Foundations', link: '/llm/genai-foundations/' },
-            {
-              text: 'Neural Network',
-              collapsed: true,
+            { text: 'GenAI Foundations',
               items: [
-                { text: 'Overview', link: '/llm/neural-network/' }
-              ]
-            },
-            {
-              text: 'Discriminative AI',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/llm/descriminative-ai/' }
-              ]
-            },
-            {
-              text: 'Generative AI',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/llm/generative-ai/' }
-              ]
-            },
-            {
-              text: 'Transformers',
-              collapsed: true,
-              items: [
-                { text: 'Introduction', link: '/llm/transformers/' },
-                { text: 'Applications', link: '/llm/transformers/applications' }
-              ]
-            },
-            {
-              text: 'GANs',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/llm/gans/' },
-                { text: 'Applications', link: '/llm/gans/applications' }
-              ]
-            },
-            {
-              text: 'Diffusers',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/llm/diffusers/' },
-                { text: 'Applications', link: '/llm/diffusers/applications' }
+                { text: 'Overview', link: '/llm/genai-foundations/' },
+                { text: 'Neural Network', link: '/llm/genai-foundations/neural-network/' },
+                { text: 'Discriminative AI', link: '/llm/genai-foundations/discriminative-ai/' },
+                {
+                  text: 'Generative AI',
+                  items: [
+                    { text: 'Transformers', link: '/llm/genai-foundations/generative-ai/transformers/' },
+                    { text: 'GANs', link: '/llm/genai-foundations/generative-ai/gans/' },
+                    { text: 'Diffusers', link: '/llm/genai-foundations/generative-ai/diffusers/' }
+                  ]
+                }
               ]
             }
           ]
@@ -247,19 +232,19 @@ export default defineConfig({
     returnToTopLabel: 'Return to top',
     sidebarMenuLabel: 'Menu',
     darkModeSwitchLabel: 'Theme',
-    
+
     nprogress: true,
 
     carbonAds: {
       code: 'your-carbon-code',
       placement: 'your-carbon-placement'
     },
-    
+
     editLink: {
       pattern: 'https://github.com/sauravaiverse/blog/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
-    
+
     lastUpdated: {
       text: 'Last updated', 
       format: (date) => {
